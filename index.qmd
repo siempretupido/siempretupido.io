@@ -1,18 +1,294 @@
 ---
-title: "Nicolás Rojo"
-subtitle: "TCCM Student"
-about:
-  template: jolla
-  image: profile.jpg  # Recuerda poner una foto con este nombre en la carpeta luego
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
+title: ""
+page-layout: full
 ---
+```{=html}
+<div class="info-card" data-aos="fade-in">
+    <div class="profile-layout">
+        
+        <div class="profile-image-container">
+            <img src="profile.jpeg" alt="Nicolas Rojo" class="profile-img">
+        </div>
 
-## About Me
+        <div class="profile-text">
+            <h1 style="margin-top: 0; font-size: 2.8rem; line-height: 1.2;">Nicolas Rojo</h1>
+            <p style="font-size: 1.2rem; color: #555; margin-bottom: 1rem;">
+                Computational Chemist focused on molecular modeling, scientific computing and theoretical methods.
+            </p>
+            <div>
+                <span class="chip">Computational Chemistry</span>
+                <span class="chip">Molecular Simulation</span>
+                <span class="chip">Quantum Methods</span>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
-Próximamente.
+<div class="info-card card-education" data-aos="fade-up">
+    <h2>Education</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <strong>MSc in Theoretical Chemistry & Computational Modeling</strong><br>
+        <span style="color: #666;">Universidad Autónoma de Madrid</span>
+    </div>
+    
+    <div>
+        <strong>BSc in Chemistry</strong><br>
+        <span style="color: #666;">Universidad Autónoma de Madrid</span>
+    </div>
+</div>
+
+<div class="info-card card-experience" data-aos="fade-up" data-aos-delay="200">
+    <h2>Experience</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <strong>Research Assistant — Universidad Complutense de Madrid (UCM)</strong><br>
+        Computational modeling, data analysis and scientific computing applied to chemical systems.
+    </div>
+    
+    <div>
+        <strong>Private Tutor — Chemistry & Mathematics</strong><br>
+        One-to-one teaching focused on problem solving and conceptual understanding.
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up">
+    <h2>Projects & Publications</h2>
+
+    <div class="projects-collapsible">
+        <div class="projects-grid">
+
+            <a href="files/Biocum1.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Biocum1">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Biocum1</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Biocum3.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Biocum3">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Biocum3</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Biocum_4.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Biocum 4">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Biocum 4</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/CI_CC.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir CI CC">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>CI CC</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Din%C3%A1mica.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Dinámica">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Dinámica</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Ejercicio_1_TC_PERE.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Ejercicio 1 TC PERE">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Ejercicio 1 TC PERE</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Ejercicio_2_TC_Txema.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Ejercicio 2 TC Txema">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Ejercicio 2 TC Txema</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Estados_Excitados.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Estados Excitados">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Estados Excitados</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Explicacion_spinchain%20%281%29.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Explicacion spinchain (1)">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>Explicacion spinchain (1)</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/FMMC1y2.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir FMMC1y2">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>FMMC1y2</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/FMMC3.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir FMMC3">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>FMMC3</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/FMMC_Ws4.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir FMMC Ws4">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>FMMC Ws4</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MEAS_PS1.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MEAS PS1">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>MEAS PS1</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MML_CROSS.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MML CROSS">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>MML CROSS</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT1_DFT.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT1 DFT">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>MQT1 DFT</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT1_HF.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT1 HF">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>MQT1 HF</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT1_PostHF.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT1 PostHF">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>MQT1 PostHF</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT2.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT2">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>MQT2</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/NonAd.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir NonAd">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>NonAd</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/SAMS.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir SAMS">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>SAMS</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/SAMS_NaCl.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir SAMS NaCl">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>SAMS NaCl</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/ecuaciones_MEAS.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir ecuaciones MEAS">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3>ecuaciones MEAS</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up">
+    <h2>Scientific Software</h2>
+    <p style="font-size: 0.9rem; color: #777; margin-bottom: 10px;">Quantum chemistry · Molecular dynamics · Visualization · HPC</p>
+    
+    <div>
+        <span class="chip">Gaussian</span> <span class="chip">ORCA</span> 
+        <span class="chip">Q-Chem</span> <span class="chip">Molpro</span> <span class="chip">GAMESS</span>
+        <span class="chip">GROMACS</span> <span class="chip">AMBER</span> 
+        <span class="chip">CPPTRAJ</span> <span class="chip">MDAnalysis</span>
+        <span class="chip">VMD</span> <span class="chip">Avogadro</span> 
+        <span class="chip">Gabedit</span> <span class="chip">Molden</span>
+        <span class="chip">Linux</span> <span class="chip">SLURM</span> 
+        <span class="chip">High-Performance Computing</span>
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up">
+    <h2>Programming</h2>
+    
+    <div style="margin-bottom: 10px;">
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">Python</span>
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">Fortran</span>
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">Bash</span>
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">C (basic)</span>
+    </div>
+    
+    <div>
+        <span class="chip">NumPy</span> <span class="chip">pandas</span> 
+        <span class="chip">SciPy</span> <span class="chip">scikit-learn</span> <span class="chip">PyTorch</span>
+        <span class="chip">Matplotlib</span> <span class="chip">Plotly</span> 
+        <span class="chip">Git</span> <span class="chip">GitHub</span> 
+        <span class="chip">Conda</span> <span class="chip">Jupyter</span>
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up" style="text-align: center;">
+    <h2>Contact</h2>
+    <div style="font-size: 1.2rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a href="https://github.com/TU_USUARIO" target="_blank" style="text-decoration: none; color: #333;">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/TU_USUARIO" target="_blank" style="text-decoration: none; color: #0077b5;">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:nicolasrojo1111@gmail.com" style="text-decoration: none; color: #d44638;">
+            <i class="bi bi-envelope-fill"></i> Email
+        </a>
+    </div>
+    <p style="margin-top: 1rem; color: #666;">Madrid, Spain</p>
+</div>
+
+<div style="height: 100px;"></div>
+```

@@ -35,11 +35,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-73ffbb3d5af2b640152b2a170fb77ab2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a5c5d0fd3ed25d366c5a5a1165f8b357.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,12 +68,25 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({
+      duration: 1200, // Duración de la animación en ms
+      easing: 'ease-out-quart',
+      once: false,    // Repite la animación al volver a entrar en viewport
+      offset: 100,
+      delay: 100        // Distancia antes de activar
+    });
+  });
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -92,10 +106,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.qmd"> 
-<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -117,45 +127,15 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="profile.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Nicolás Rojo</h1>
-<p class="subtitle lead">TCCM Student</p>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<section id="about-me" class="level2">
-<h2 data-anchor-id="about-me">About Me</h2>
-<p>Próximamente.</p>
-
-
-</section>
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://linkedin.com" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 style="margin-top: 0; font-size: 2.8rem; line-height: 1.2;" class="title display-7">Nicolas Rojo</h1></header>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<div id="main-bg" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -10; background-color: #010409;"></div>
+<div id="main-bg" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -10; background: radial-gradient(circle at 20% 10%, #f3f8ff 0%, #ffffff 40%, #f7f9fc 100%);"></div>
 
 <div id="particles-js" style="
     position: fixed; 
@@ -164,6 +144,7 @@ ul.task-list li input[type="checkbox"] {
     width: 50%; 
     height: 100vh; 
     z-index: -5;
+    background: linear-gradient(to right, rgba(79, 107, 136, 0.12) 0%, rgba(79, 107, 136, 0.03) 55%, rgba(79, 107, 136, 0) 100%);
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 90%);
 "></div>
@@ -185,25 +166,42 @@ ul.task-list li input[type="checkbox"] {
 /* --- 1. PARTÍCULAS (IZQUIERDA) --- */
 particlesJS("particles-js", {
   "particles": {
-    "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-    "color": { "value": "#00d2ff" }, 
+    "number": { "value": 98, "density": { "enable": true, "value_area": 800 } },
+    "color": { "value": "#456588" }, 
     "shape": { "type": "circle" },
-    "opacity": { "value": 0.6 },
-    "size": { "value": 3, "random": true },
-    "line_linked": { "enable": true, "distance": 150, "color": "#00d2ff", "opacity": 0.4, "width": 1 },
-    "move": { "enable": true, "speed": 1.2 }
+    "opacity": { "value": 0.75, "random": true, "anim": { "enable": true, "speed": 0.6, "opacity_min": 0.35, "sync": false } },
+    "size": { "value": 3.3, "random": true },
+    "line_linked": { "enable": true, "distance": 155, "color": "#5f7fa3", "opacity": 0.72, "width": 1.3 },
+    "move": { "enable": true, "speed": 1.0 }
   },
-  "interactivity": { "events": { "onhover": { "enable": false } } },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": { "enable": true, "mode": "grab" },
+      "onclick": { "enable": true, "mode": "push" },
+      "resize": true
+    },
+    "modes": {
+      "grab": { "distance": 185, "line_linked": { "opacity": 0.95 } },
+      "repulse": { "distance": 110, "duration": 0.4 },
+      "push": { "particles_nb": 2 }
+    }
+  },
   "retina_detect": true
 });
 
 /* --- 2. ESPINES (DERECHA) - CORREGIDO --- */
 const container = document.getElementById('spins-container');
-const spacing = 45; 
+const spacing = 52; 
+const spins = [];
+const spinData = [];
+let pointerX = 0;
+let pointerY = 0;
+let rafPending = false;
 
 // TRUCO: Calculamos columnas para el 60% de la pantalla (0.6) aunque el div sea del 50%
 // Esto garantiza que sobran espines por la derecha y no queda hueco negro.
-const cols = Math.ceil(window.innerWidth * 0.6 / spacing); 
+const cols = Math.ceil(window.innerWidth * 0.55 / spacing); 
 const rows = Math.ceil(window.innerHeight / spacing);
 
 for (let i = 0; i < rows; i++) {
@@ -213,60 +211,400 @@ for (let i = 0; i < rows; i++) {
         // Los colocamos desde la izquierda del contenedor hacia la derecha
         spin.style.left = `${j * spacing + 10}px`;
         spin.style.top = `${i * spacing + 20}px`;
+        spin.dataset.angle = '0';
         container.appendChild(spin);
+        spins.push(spin);
+        spinData.push({
+            x: j * spacing + 10,
+            y: i * spacing + 20,
+            angle: 0
+        });
+    }
+}
+
+function updateSpins() {
+    rafPending = false;
+    const containerRect = container.getBoundingClientRect();
+
+    // Optimizacion: Solo calculamos si el ratón está en la mitad derecha de la pantalla
+    if (pointerX < window.innerWidth * 0.4) return;
+
+    const mouseX = pointerX - containerRect.left;
+    const mouseY = pointerY - containerRect.top;
+
+    for (let i = 0; i < spins.length; i++) {
+        const spin = spins[i];
+        const data = spinData[i];
+
+        const deltaX = mouseX - data.x;
+        const deltaY = mouseY - data.y;
+        const targetAngle = Math.atan2(deltaY, deltaX);
+
+        // Diferencia angular mínima en [-PI, PI], robusta aunque data.angle crezca.
+        const angleDelta = Math.atan2(
+            Math.sin(targetAngle - data.angle),
+            Math.cos(targetAngle - data.angle)
+        );
+
+        if (Math.abs(angleDelta) < 0.001) continue;
+        data.angle += angleDelta;
+        spin.style.transform = `rotate(${data.angle}rad)`;
     }
 }
 
 document.addEventListener('mousemove', (e) => {
-    const spins = document.querySelectorAll('.quantum-spin');
-    const containerRect = container.getBoundingClientRect();
-    
-    // Optimizacion: Solo calculamos si el ratón está en la mitad derecha de la pantalla
-    if (e.clientX < window.innerWidth * 0.4) return; 
+    pointerX = e.clientX;
+    pointerY = e.clientY;
 
-    const mouseX = e.clientX - containerRect.left;
-    const mouseY = e.clientY - containerRect.top;
-
-    spins.forEach(spin => {
-        const spinX = parseFloat(spin.style.left);
-        const spinY = parseFloat(spin.style.top);
-        
-        const deltaX = mouseX - spinX;
-        const deltaY = mouseY - spinY;
-        const angle = Math.atan2(deltaY, deltaX);
-        
-        spin.style.transform = `rotate(${angle}rad)`;
-    });
+    if (!rafPending) {
+        rafPending = true;
+        requestAnimationFrame(updateSpins);
+    }
 });
 </script>
 
 <style>
 .quantum-spin {
     position: absolute;
-    width: 14px;
+    width: 19px;
     height: 2px;
-    background: #58a6ff;
+    background: linear-gradient(90deg, rgba(98, 122, 149, 0.2) 0%, rgba(81, 106, 136, 0.95) 90%);
     border-radius: 2px;
     transform-origin: center left;
-    opacity: 0.7; 
-    transition: transform 0.1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    will-change: transform; /* Optimización para que vaya fluido */
+    opacity: 0.92;
+    will-change: transform;
+    box-shadow: 0 0 3px rgba(81, 106, 136, 0.22);
 }
-/* La punta de la flecha */
+
+.quantum-spin::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    width: 4px;
+    height: 1px;
+    background: rgba(248, 251, 255, 0.95);
+    transform: translateY(-50%);
+}
+
 .quantum-spin::after {
     content: '';
     position: absolute;
-    right: 0;
-    top: -1.5px;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 6px #00d2ff;
+    right: -0.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid #4f6b88;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 </style>
+
+
+
+
+<div class="info-card" data-aos="fade-in">
+    <div class="profile-layout">
+        
+        <div class="profile-image-container">
+            <img src="profile.jpeg" alt="Nicolas Rojo" class="profile-img">
+        </div>
+
+        <div class="profile-text">
+            
+            <p style="font-size: 1.2rem; color: #555; margin-bottom: 1rem;">
+                Computational Chemist focused on molecular modeling, scientific computing and theoretical methods.
+            </p>
+            <div>
+                <span class="chip">Computational Chemistry</span>
+                <span class="chip">Molecular Simulation</span>
+                <span class="chip">Quantum Methods</span>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="info-card card-education" data-aos="fade-up">
+    <h2 class="anchored">Education</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <strong>MSc in Theoretical Chemistry &amp; Computational Modeling</strong><br>
+        <span style="color: #666;">Universidad Autónoma de Madrid</span>
+    </div>
+    
+    <div>
+        <strong>BSc in Chemistry</strong><br>
+        <span style="color: #666;">Universidad Autónoma de Madrid</span>
+    </div>
+</div>
+
+<div class="info-card card-experience" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="anchored">Experience</h2>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <strong>Research Assistant — Universidad Complutense de Madrid (UCM)</strong><br>
+        Computational modeling, data analysis and scientific computing applied to chemical systems.
+    </div>
+    
+    <div>
+        <strong>Private Tutor — Chemistry &amp; Mathematics</strong><br>
+        One-to-one teaching focused on problem solving and conceptual understanding.
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up">
+    <h2 class="anchored">Projects &amp; Publications</h2>
+
+    <div class="projects-collapsible">
+        <div class="projects-grid">
+
+            <a href="files/Biocum1.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Biocum1">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Biocum1</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Biocum3.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Biocum3">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Biocum3</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Biocum_4.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Biocum 4">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Biocum 4</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/CI_CC.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir CI CC">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">CI CC</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Dinámica.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Dinámica">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Dinámica</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Ejercicio_1_TC_PERE.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Ejercicio 1 TC PERE">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Ejercicio 1 TC PERE</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Ejercicio_2_TC_Txema.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Ejercicio 2 TC Txema">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Ejercicio 2 TC Txema</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Estados_Excitados.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Estados Excitados">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Estados Excitados</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/Explicacion_spinchain (1).pdf" target="_blank" rel="noopener" class="project-item" title="Abrir Explicacion spinchain (1)">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">Explicacion spinchain (1)</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/FMMC1y2.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir FMMC1y2">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">FMMC1y2</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/FMMC3.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir FMMC3">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">FMMC3</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/FMMC_Ws4.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir FMMC Ws4">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">FMMC Ws4</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MEAS_PS1.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MEAS PS1">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">MEAS PS1</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MML_CROSS.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MML CROSS">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">MML CROSS</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT1_DFT.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT1 DFT">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">MQT1 DFT</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT1_HF.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT1 HF">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">MQT1 HF</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT1_PostHF.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT1 PostHF">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">MQT1 PostHF</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/MQT2.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir MQT2">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">MQT2</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/NonAd.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir NonAd">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">NonAd</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/SAMS.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir SAMS">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">SAMS</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/SAMS_NaCl.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir SAMS NaCl">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">SAMS NaCl</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+            <a href="files/ecuaciones_MEAS.pdf" target="_blank" rel="noopener" class="project-item" title="Abrir ecuaciones MEAS">
+                <div class="project-head">
+                    <span class="project-icon-small"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+                    <h3 class="anchored">ecuaciones MEAS</h3>
+                </div>
+                <span class="project-open">Abrir PDF <i class="bi bi-arrow-up-right-circle"></i></span>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up">
+    <h2 class="anchored">Scientific Software</h2>
+    <p style="font-size: 0.9rem; color: #777; margin-bottom: 10px;">Quantum chemistry · Molecular dynamics · Visualization · HPC</p>
+    
+    <div>
+        <span class="chip">Gaussian</span> <span class="chip">ORCA</span> 
+        <span class="chip">Q-Chem</span> <span class="chip">Molpro</span> <span class="chip">GAMESS</span>
+        <span class="chip">GROMACS</span> <span class="chip">AMBER</span> 
+        <span class="chip">CPPTRAJ</span> <span class="chip">MDAnalysis</span>
+        <span class="chip">VMD</span> <span class="chip">Avogadro</span> 
+        <span class="chip">Gabedit</span> <span class="chip">Molden</span>
+        <span class="chip">Linux</span> <span class="chip">SLURM</span> 
+        <span class="chip">High-Performance Computing</span>
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up">
+    <h2 class="anchored">Programming</h2>
+    
+    <div style="margin-bottom: 10px;">
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">Python</span>
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">Fortran</span>
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">Bash</span>
+        <span class="chip" style="background: #dbeafe; color: #1e40af;">C (basic)</span>
+    </div>
+    
+    <div>
+        <span class="chip">NumPy</span> <span class="chip">pandas</span> 
+        <span class="chip">SciPy</span> <span class="chip">scikit-learn</span> <span class="chip">PyTorch</span>
+        <span class="chip">Matplotlib</span> <span class="chip">Plotly</span> 
+        <span class="chip">Git</span> <span class="chip">GitHub</span> 
+        <span class="chip">Conda</span> <span class="chip">Jupyter</span>
+    </div>
+</div>
+
+<div class="info-card" data-aos="fade-up" style="text-align: center;">
+    <h2 class="anchored">Contact</h2>
+    <div style="font-size: 1.2rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a href="https://github.com/TU_USUARIO" target="_blank" style="text-decoration: none; color: #333;">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/TU_USUARIO" target="_blank" style="text-decoration: none; color: #0077b5;">
+            <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:nicolasrojo1111@gmail.com" style="text-decoration: none; color: #d44638;">
+            <i class="bi bi-envelope-fill"></i> Email
+        </a>
+    </div>
+    <p style="margin-top: 1rem; color: #666;">Madrid, Spain</p>
+</div>
+
+<div style="height: 100px;"></div>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -331,7 +669,7 @@ document.addEventListener('mousemove', (e) => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/siempretupido\.github\.io\/siempretupido\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

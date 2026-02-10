@@ -1,15 +1,13 @@
 project:
   type: website
-
+  output-dir: docs
 website:
   title: "Nicolás Rojo"
   navbar:
-    background: "#010409"
+    background: "#ffffff"
     left:
       - href: index.qmd
         text: Home
-      - href: projects.qmd
-        text: Projects
     right:
       - icon: github
         href: https://github.com/
@@ -21,4 +19,5 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    include-after-body: sc-visuals.html  # <--- CAMBIO AQUÍ
+    include-before-body: sc-visuals.html
+    include-in-header: aos-head.html
