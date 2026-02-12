@@ -135,6 +135,57 @@ a:hover { color: #1d4ed8; }
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
 }
 
+/* --- LANGUAGE LEVEL BARS --- */
+.language-levels {
+    display: grid;
+    gap: 0.7rem;
+}
+
+.language-level-item {
+    background: rgba(219, 234, 254, 0.45);
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    border-radius: 12px;
+    padding: 0.6rem 0.75rem;
+}
+
+.language-level-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.42rem;
+    font-size: 0.92rem;
+}
+
+.language-name {
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+.language-bar-track {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.28);
+    overflow: hidden;
+}
+
+.language-bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2563eb, #38bdf8);
+    width: 0;
+    transition: width 2.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.info-card.aos-animate .language-bar-fill {
+    width: var(--level, 0%);
+}
+
+.language-level-item:nth-child(2) .language-bar-fill { transition-delay: 0.08s; }
+.language-level-item:nth-child(3) .language-bar-fill { transition-delay: 0.16s; }
+.language-level-item:nth-child(4) .language-bar-fill { transition-delay: 0.24s; }
+
 /* --- CONTACT LINKS --- */
 .contact-links {
     display: flex;
